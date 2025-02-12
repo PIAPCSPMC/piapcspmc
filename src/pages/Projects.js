@@ -1,10 +1,23 @@
 import React from 'react';
 
+import projectControlsImg from '../assets/images/aboutbanner.png';
+import deliverablesImg from '../assets/images/banner.png';
+import dashboardsImg from '../assets/images/contact.jpg';
+import ProjectControlsTable from './ProjectControlsTable';
+import ProjectControlsDeliverables from './ProjectControlsDeliverables';
+
 export default function Projects() {
   return (
-    <div className="page">
-      <h1>Our Projects</h1>
-      <p>Take a look at some of our successful projects.</p>
-    </div>
+    <section className="projects-page">
+      <div className="container">
+        <ProjectControlsTable/>
+        <ProjectControlsDeliverables/>
+        {/* Project Controls System */}
+        <div className="project-section">
+          
+        </div>
+
+      </div>
+    </section>
   );
 }

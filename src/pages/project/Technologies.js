@@ -6,7 +6,7 @@ import powerAutomate from "../../assets/technologies/Power-Automate-Logo.webp";
 import python from "../../assets/technologies/Python-Logo.png";
 import apacheAirflow from "../../assets/technologies/AirflowLogo.png";
 import alteryx from "../../assets/technologies/alteryx-logo.png";
-import oracleDB from "../../assets/technologies/ئۆراکڵ-removebg-preview.png";
+import oracleDB from "../../assets/technologies/oracle.png";
 import sharepoint from "../../assets/technologies/SharePoint-Symbol.png";
 import primaveraP6 from "../../assets/technologies/Oracle-Primavera-P6-800-600x600-1.webp";
 import msProject from "../../assets/technologies/MS-Project-Logo-Wide.png";

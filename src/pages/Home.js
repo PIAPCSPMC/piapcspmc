@@ -102,10 +102,9 @@ time, within budget, and to the highest standards.
   </div>
 </div>
 
+<Standards/>
   </div>
 </section>
-
-<Standards/>
     </>
   );
 }

@@ -9,6 +9,7 @@ export default function Navbar() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleClick = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -39,36 +40,48 @@ export default function Navbar() {
             <div className="navbar-logo">
               <img src={logo} alt="PIA Logo" />
             </div>
-            <ul className="nav-links">
+
+            {/* Бургер-меню для мобилки */}
+            <div className="burger-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              <div className={isMenuOpen ? "burger-line open" : "burger-line"}></div>
+              <div className={isMenuOpen ? "burger-line open" : "burger-line"}></div>
+              <div className={isMenuOpen ? "burger-line open" : "burger-line"}></div>
+            </div>
+
+            <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
               <li>
-                <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "")} onClick={handleClick}>
+                <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "")} onClick={() => setIsMenuOpen(false)}>
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" className={({ isActive }) => (isActive ? "active-link" : "")} onClick={handleClick}>
+                <NavLink to="/about" className={({ isActive }) => (isActive ? "active-link" : "")} onClick={() => setIsMenuOpen(false)}>
                   About us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/projects" className={({ isActive }) => (isActive ? "active-link" : "")} onClick={handleClick}>
+                <NavLink to="/projects" className={({ isActive }) => (isActive ? "active-link" : "")} onClick={() => setIsMenuOpen(false)}>
                   Project
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className={({ isActive }) => (isActive ? "active-link" : "")} onClick={handleClick}>
+                <NavLink to="/contact" className={({ isActive }) => (isActive ? "active-link" : "")} onClick={() => setIsMenuOpen(false)}>
                   Contact
                 </NavLink>
               </li>
             </ul>
-            <div className="social-icons">
-              <a href="#">
-                <img src={instagram} alt="Instagram" />
-              </a>
-              <a href="#">
-                <img src={whatsapp} alt="WhatsApp" />
-              </a>
-            </div>
+            
+            {/* Соц. иконки (скрываем на мобилке) */}
+            {!isMenuOpen && (
+              <div className="social-icons">
+                <a href="#">
+                  <img src={instagram} alt="Instagram" />
+                </a>
+                <a href="#">
+                  <img src={whatsapp} alt="WhatsApp" />
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </nav>

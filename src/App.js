@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop"; // ✅ Импортируем
 import "./styles/index.css"; 
 import "./styles/reset.css";
+import './styles/second.css';
 
 function App() {
   return (

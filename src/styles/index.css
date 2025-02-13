@@ -1206,7 +1206,6 @@ gap: 15px;
   color: white;
   font-weight: bold;
   text-align: center;
-  writing-mode: vertical-rl;
   text-orientation: mixed;
   padding: 10px;
 }
@@ -1294,21 +1293,10 @@ gap: 15px;
   border-bottom: 1px solid #ccc;
 }
 
-.table-cell {
-  padding: 15px;
-  text-align: left;
-  font-size: 16px;
-}
-
 .phase {
   color: #004f9f;
   font-weight: bold;
   font-size: 18px;
-}
-
-.strategy,
-.value {
-  background-color: #e3f2fd;
 }
 
 ul {

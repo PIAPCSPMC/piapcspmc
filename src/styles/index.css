@@ -58,12 +58,18 @@ html, body {
 
 /* ✅ Фон для главной страницы */
 .home-bg {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 /* ✅ Фон для остальных страниц */
 .other-bg {
-    background: #010052 !important;
+  background: #010052 !important;
+}
+
+/* ✅ Фон при скролле */
+.scrolled-bg {
+  background: #010052 !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Небольшая тень */
 }
 
 /* ✅ Стили навигации */
@@ -1250,13 +1256,7 @@ gap: 15px;
   max-width: 1200px;
   margin: auto;
   text-align: center;
-}
-
-.table-title {
-  font-size: 28px;
-  font-weight: bold;
-  color: #004f9f;
-  margin-bottom: 5px;
+  padding: 120px 0 60px;
 }
 
 .table-subtitle {
@@ -1306,4 +1306,244 @@ ul {
 
 ul li {
   margin-bottom: 5px;
+}
+
+.technologies-section {
+  text-align: center;
+  padding: 50px 0 0;
+  background-color: #f9f9f9;
+}
+
+.technologies-title {
+  font-size: 28px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.technologies-subtitle {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.technologies-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1000px;
+  margin: auto;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 60px;
+}
+
+.technology-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+  align-items: center; /* Центрируем содержимое */
+}
+
+.technology-category {
+  text-align: center;
+}
+
+.category-title {
+  font-size: 20px;
+  color: #1e3a8a;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.technology-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Центрируем логотипы */
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.tool-logo {
+  width: 100px; /* Ограничение по размеру */
+  height: auto;
+}
+
+.microsoft-page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.microsoft-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.microsoft-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.microsoft-subtitle {
+  font-size: 20px;
+  color: #666;
+}
+
+.microsoft-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.service-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.sharepoint-container {
+  background: #e9f3ff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.sharepoint-header {
+  display: flex;
+  gap: 20px;
+}
+
+.first{
+  width: 30%;
+}
+
+.second{
+  width: 70%;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.service-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.service-list li {
+  font-size: 14px;
+  color: #444;
+}
+
+.microsoft-description {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  text-align: left;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.roadmap-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px;
+}
+
+.roadmap-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.roadmap-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.roadmap-subtitle {
+  font-size: 16px;
+  color: #666;
+}
+
+.planning-phase {
+  background: #0056b3;
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.phase-title {
+  font-size: 18px;
+}
+
+.phase-subtitle {
+  font-size: 14px;
+  color: #d1e5ff;
+}
+
+.roadmap-table {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.roadmap-row {
+  display: contents;
+}
+
+.roadmap-category {
+  background: #f5f5f5;
+  padding: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  color: #0056b3;
+}
+
+.roadmap-content {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .roadmap-table {
+    display: block;
+  }
+  
+  .roadmap-category,
+  .roadmap-content {
+    display: block;
+    width: 100%;
+  }
 }

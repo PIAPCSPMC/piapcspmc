@@ -1,17 +1,19 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom'; // ✅ Используем Routes, но не Router
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+import React from "react";
+import { Routes, Route } from "react-router-dom"; // ✅ Добавляем Router
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop"; // ✅ Импортируем
 import "./styles/index.css"; 
 import "./styles/reset.css";
 
 function App() {
   return (
-    <div>
+    <>
+      <ScrollToTop /> {/* ✅ Добавляем прокрутку вверх */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,7 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 }
 

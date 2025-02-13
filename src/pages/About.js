@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from "react";
 import aboutImage from '../assets/images/aboutbanner.png';
 import icon1 from '../assets/icons/1.svg';
 import icon2 from '../assets/icons/2.svg';
@@ -12,6 +13,10 @@ import TeamSection from './Team.js';
 
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []); // Вызываем один раз при монтировании страницы
+
   return (
     <section className="about-page">
       {/* Верхний заголовок с фоном */}

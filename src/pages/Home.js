@@ -7,8 +7,13 @@ import Trophy from '../assets/icons/Trophy.png';
 import Warning from '../assets/icons/Warning.png';
 import Map from '../assets/icons/World Map.png';
 import Standards from '../components/Standarts';
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []); // Вызываем один раз при монтировании страницы
+
   return (
     <>
       {/* Hero Section */}

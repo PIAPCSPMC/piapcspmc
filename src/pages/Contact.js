@@ -1,8 +1,14 @@
 import React from 'react';
 import contactImage from '../assets/images/contact.jpg';
 import MapContact from "../assets/images/map.png";
+import { useEffect } from "react";
 
 export default function Contact() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []); // Вызываем один раз при монтировании страницы
+
+  
   return (
     <section className="contact">
       <div className="contact-header">

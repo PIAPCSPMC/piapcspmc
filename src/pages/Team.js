@@ -6,61 +6,38 @@ import expert4 from "../assets/team/team4.png";
 import expert5 from "../assets/team/team5.png";
 import expert6 from "../assets/team/team6.png";
 
-
-import oilGasIcon from "../assets/icons/1.svg";
-import renewablesIcon from "../assets/icons/2.svg";
-import buildingsIcon from "../assets/icons/3.svg";
-import miningIcon from "../assets/icons/2.svg";
-import chemicalIcon from "../assets/icons/3.svg";
-import infrastructureIcon from "../assets/icons/1.svg";
-
 const teamMembers = [
   {
     img: expert1,
     name: "Azamat Barlybayev",
     role: "Project Controls Head",
-    experience: "20+ years Project Controls Experience",
   },
   {
     img: expert2,
     name: "Yerzhan Usenov",
     role: "Cost Control Head",
-    experience: "20+ years of EPC Projects Planning & Cost Control",
   },
   {
     img: expert3,
     name: "Timur Azbenov",
     role: "Planning & Scheduling Head",
-    experience: "20+ years of EPC Projects Planning & Scheduling",
   },
   {
     img: expert4,
     name: "Aleksey Murzaliyev",
     role: "Planning & Risks Expert",
-    experience: "15+ years of Project Planning and Risk Management",
   },
   {
     img: expert5,
     name: "Alibek Manamuratov",
     role: "Lead Data Analyst",
-    experience: "15+ years of Reporting, Data Engineering & Analytics",
   },
   {
     img: expert6,
     name: "Wilfredo Sacmar",
     role: "Lead Planning Engineer",
-    experience: "0+ years of EPC Project Planning and Delay Analyses",
   },
 ];
-
-const experienceFields = [
-    { icon: oilGasIcon, title: "Oil and Gas" },
-    { icon: renewablesIcon, title: "Renewables" },
-    { icon: buildingsIcon, title: "Residential and Living Buildings" },
-    { icon: miningIcon, title: "Mining" },
-    { icon: chemicalIcon, title: "Chemical and Industrial Plants" },
-    { icon: infrastructureIcon, title: "Infrastructure and Transportation" },
-  ];
 
 export default function TeamSection() {
   return (
@@ -74,7 +51,6 @@ export default function TeamSection() {
             <img src={member.img} alt={member.name} className="team-photo" />
             <h3 className="team-name">{member.name}</h3>
             <p className="team-role">{member.role}</p>
-            <p className="team-experience">{member.experience}</p>
           </div>
         ))}
       </div> 

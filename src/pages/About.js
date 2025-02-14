@@ -8,7 +8,7 @@ import icon4 from '../assets/icons/4.svg';
 import icon5 from '../assets/icons/5.svg';
 import icon6 from '../assets/icons/6.svg';
 import BusinessAnimation from "./BusinessAnimation.js";
-import TeamSection from './Team.js';
+// import TeamSection from './Team.js';
 
 
 
@@ -105,7 +105,7 @@ export default function About() {
     </div>
 </section>
 
-<TeamSection />
+{/* <TeamSection /> */}
 
       </div>
     </section>

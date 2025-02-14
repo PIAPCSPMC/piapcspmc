@@ -8,7 +8,7 @@ import apacheAirflow from "../../assets/technologies/AirflowLogo.png";
 import alteryx from "../../assets/technologies/alteryx-logo.png";
 import oracleDB from "../../assets/technologies/oracle.png";
 import sharepoint from "../../assets/technologies/SharePoint-Symbol.png";
-import primaveraP6 from "../../assets/technologies/Oracle-Primavera-P6-800-600x600-1.webp";
+import primaveraP6 from "../../assets/technologies/Oracle-Primavera-P6-400px (1).png";
 import msProject from "../../assets/technologies/MS-Project-Logo-Wide.png";
 import primaveraRisk from "../../assets/technologies/oracle-primavera-risk-analysis-akim-egineering-logo.png";
 import aclAnalytics from "../../assets/technologies/xafG80r7sSG5VNa4GV_-gPjgzeLnjucXUM3G001hzEw.webp";

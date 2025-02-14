@@ -38,7 +38,9 @@ export default function Contact() {
               Got a question or need assistance? We're here to help! Whether you have an inquiry, need support,
               or just want to share your thoughts, feel free to get in touch.
             </p>
-            <a href="tel:+919862055297" className="contact-link">+91 9862055297</a>
+            <a href="tel:+77760066005" className="contact-link">+7 7760066005</a>
+            <a href="tel:+420773026279" className="contact-link">+420 773 026 279</a>
+
           </div>
           <div className="info-box">
             <span className="icon-contact">📧</span>

@@ -61,7 +61,7 @@ time, within budget, and to the highest standards.
         </div>
           {/* Изображение */}
           <div className="company-image">
-            <img src={hero} alt="Construction Worker" />
+            <img src={hero} loading="lazy" alt="Optimized Image" />
           </div>
         </div>
       </section>
@@ -76,7 +76,7 @@ time, within budget, and to the highest standards.
   </div>
 
   <div className="why-item">
-    <img src = {Map} className='home-icon'></img>
+    <img src = {Map} className='home-icon' loading="lazy" alt="Optimized Image"></img>
   <h3>Scope Control</h3>
     <p>Benefit from our extensive industry knowledge and strategic insights, empowering your business to navigate global markets.</p>
   </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from "react";
-import aboutImage from '../assets/images/aboutbanner.png';
+import aboutImage from '../assets/images/aboutbanner.webp';
 import icon1 from '../assets/icons/1.svg';
 import icon2 from '../assets/icons/2.svg';
 import icon3 from '../assets/icons/3.svg';

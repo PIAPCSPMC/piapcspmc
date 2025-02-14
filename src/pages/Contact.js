@@ -1,6 +1,6 @@
 import React from 'react';
-import contactImage from '../assets/images/contact.jpg';
-import MapContact from "../assets/images/map.png";
+import contactImage from '../assets/images/contact.webp';
+import MapContact from "../assets/images/map.webp";
 import { useEffect } from "react";
 
 export default function Contact() {

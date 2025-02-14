@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/index.css';
-import hero from "../assets/images/hero.jpg";
+import hero from "../assets/images/hero.webp";
 import Calendar from '../assets/icons/Calendar.png';
 import Money from '../assets/icons/Money Bag.png';
 import Trophy from '../assets/icons/Trophy.png';

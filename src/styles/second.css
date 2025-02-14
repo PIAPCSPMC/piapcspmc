@@ -310,7 +310,7 @@ text-align: center;
 /* Заголовок About */
 .about-header {
   position: relative;
-  background: url('../assets/images/photo2.jpg') no-repeat center center/cover;
+  background: url('../assets/images/photo2.webp') no-repeat center center/cover;
   height: 40vh; /* Высота 40vh */
   color: white;
   display: flex;

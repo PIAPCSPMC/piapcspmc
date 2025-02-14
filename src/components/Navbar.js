@@ -38,7 +38,7 @@ export default function Navbar() {
         <div className="container">
           <div className="navbar_section">
             <div className="navbar-logo">
-              <img src={logo} alt="PIA Logo" />
+              <img src={logo} alt="Lazy Loaded Image" loading="lazy"/>
             </div>
 
             {/* Бургер-меню для мобилки */}
